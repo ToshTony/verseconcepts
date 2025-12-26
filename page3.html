@@ -1,306 +1,364 @@
 <!DOCTYPE html>
-<html >
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-      <link rel="shortcut icon" href="https://r.mobirisesite.com/1794503/assets/images/photo-1634561721901-5c4a52896-h_mf47rocn.jpg" type="image/x-icon">
-      <meta name="description" content="">
-      <title>My cademy</title>
-      <link rel="stylesheet" href="https://r.mobirisesite.com/1794503/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1758724057679">
-      <link rel="stylesheet" href="https://r.mobirisesite.com/1794503/assets/bootstrap/css/bootstrap.min.css?rnd=1758724057679">
-      <link rel="stylesheet" href="https://r.mobirisesite.com/1794503/assets/parallax/jarallax.css?rnd=1758724057679">
-      <link rel="stylesheet" href="https://r.mobirisesite.com/1794503/assets/socicon/css/styles.css?rnd=1758724057679">
-      <link rel="stylesheet" href="https://r.mobirisesite.com/1794503/assets/theme/css/style.css?rnd=1758724057679">
-      <link rel="stylesheet" href="https://r.mobirisesite.com/1794503/assets/recaptcha.css?rnd=1758724057679">
-      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-      <noscript>
-         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap&display=swap">
-      </noscript>
-      <link rel="stylesheet" href="https://r.mobirisesite.com/1794503/assets/css/mbr-additional.css?rnd=1758724057679" type="text/css">
-      <style>
-         .navbar-fixed-top {
-         top: auto;
-         }
-         #mobirisePromo.container-banner {
-         height: 11rem;
-         opacity: 1;
-         -webkit-animation: 11s linear animationHeight;
-         -moz-animation: 11s linear animationHeight;
-         -o-animation: 11s linear animationHeight;
-         animation: 11s linear animationHeight;
-         transition: all  0.5s;
-         }
-         #mobirisePromo.container-banner.container-banner-closing {
-         pointer-events: none;
-         height: 0;
-         opacity: 0;
-         -webkit-animation: 0.5s linear animationClosing;
-         -moz-animation:  0.5s linear animationClosing;
-         -o-animation:  0.5s linear animationClosing;
-         animation:  0.5s linear animationClosing;
-         }
-         #mobirisePromo .banner {
-         min-height: 11rem;
-         position:fixed;
-         top: 0;
-         left: 0;
-         right: 0;
-         background: #fff;
-         padding: 10px;
-         opacity:1;
-         -webkit-animation: 11s linear animationBanner;
-         -moz-animation: 11s linear animationBanner;
-         -o-animation: 11s linear animationBanner;
-         animation: 11s linear animationBanner;
-         z-index: 1031;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         }
-         #mobirisePromo .banner p {
-         overflow: hidden;
-         display: -webkit-box;
-         -webkit-line-clamp: 4;
-         -webkit-box-orient: vertical;
-         animation: none;
-         visibility: visible;
-         }
-         #mobirisePromo .buy-license {
-         text-decoration: underline;
-         }
-         #mobirisePromo .banner .btn {
-         margin: 0.3rem 0.5rem;
-         animation: none;
-         visibility: visible;
-         }
-         .navbar.opened {
-         z-index: 1032;
-         }
-         #mobirisePromo .mbr-section-abuse-report {
-         margin-top: 0.8rem;
-         font-size: 80%;
-         }
-         #mobirisePromo .mbr-section-abuse-report a {
-         color: #aaa;
-         }
-         @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
-         @-moz-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
-         @-o-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
-         @keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
-         @-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
-         @-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
-         @-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
-         @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
-         @-webkit-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-         @-moz-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-         @-o-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-         @keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-         @media(max-width: 575px) {
-         #mobirisePromo.container-banner {
-         height: 14rem;
-         }
-         #mobirisePromo .banner {
-         min-height: 14rem;
-         }
-         @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
-         @-moz-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
-         @-o-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
-         @keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
-         @-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
-         @-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
-         @-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
-         @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
-         @-webkit-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-         @-moz-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-         @-o-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-         @keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-         }
-      </style>
-   </head>
-   <body>
-      <div class="container-banner" id="mobirisePromo">
-         
-      </div>
-      <section data-bs-version="5.1" class="header13 cid-uWjLDR5Wj9 mbr-parallax-background" id="header13-z">
-         <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(3, 140, 130);"></div>
-         <div class="align-center container">
-            <div class="row justify-content-center">
-               <div class="col-md-12 mb-5 content-head">
-                  <h1 class="mbr-section-title mbr-fonts-style display-1"><strong>Academy</strong></h1>
-                  <p class="mbr-text mbr-fonts-style mt-4 display-7">My Academy is the training and skills development arm of Verse Concepts — created to empower individuals with the knowledge and tools needed to thrive in the digital world.<br><br>We focus on practical, hands-on training in Virtual Assistance, Social Media Management, Graphic Design, Web &amp; App Development, SEO, and Digital Marketing, equipping learners with in-demand skills that open doors to both local and global opportunities.
-                  </p>
-                  <div class="mbr-section-btn mt-4"><a class="btn btn-success display-7" href="index.html#contact-form-3-uVKNIT2CGS">Get started</a></div>
-               </div>
-            </div>
-            <div class="row justify-content-center">
-               <div class="col-12 col-md-8">
-                  <img src="https://r.mobirisesite.com/1794503/assets/images/g6ebbe5d816ef9bfa121866429774-h_mfcrnest.jpg" alt="" title="">
-               </div>
-            </div>
-         </div>
-      </section>
-      <section data-bs-version="5.1" class="header02 neuralm5 cid-uWjMk5ULnb mbr-parallax-background" id="header02-11">
-         <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(3, 140, 130);"></div>
-         <div class="container-fluid">
-            <div class="row flex-row-reverse">
-               <div class="col-12 col-lg-6 card">
-                  <div class="card-wrapper">
-                     <div class="title-wrapper">
-                        <h2 class="mbr-section-title mbr-fonts-style display-1">My&nbsp;<br>Academy<br></h2>
-                     </div>
-                     <p class="mbr-text mbr-fonts-style display-4">At My Academy, we believe in learning by doing. That’s why our programs combine expert-led lessons with real projects, mentorship, and guaranteed internship/attachment opportunities with partner businesses and organizations. This ensures that every learner gains practical work experience and a competitive edge in the job market.<br><br>Our mission is to bridge the gap between talent and opportunity by producing skilled digital professionals who are ready to serve, innovate, and lead.<br><br>With My Academy, your journey doesn’t end at learning — it continues with career support, networking, and access to real opportunities that help you succeed.</p>
-                     <div class="mbr-section-btn"><a class="btn btn-success display-4" href="page3.html#">
-                        <span class="mobi-mbri mobi-mbri-arrow-next mbr-iconfont mbr-iconfont-btn"></span>
-                        Start now
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-12 col-lg-6 card">
-                  <div class="image-wrapper">
-                     <img src="https://r.mobirisesite.com/1794503/assets/images/image70.jpg?rnd=1758724057719" alt="">
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section data-bs-version="5.1" class="header8 cid-uWjM9NoJ6p" id="header08-10">
-         <div class="container">
-            <div class="row content-wrapper justify-content-center">
-               <div class="col-lg-7 mbr-form">
-                  <div class="text-wrapper align-left" data-form-type="formoid">
-                     <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name">
-                        <input type="hidden" name="email" data-form-email="true" value="ekzVBcOTE9df99eIX0DA+5UX4OjuDOoHxx8+HfEnHXzrcso2Rag2P/7VP2UrJE/57AxqaWj+exv1XLfkJtBLDg/4RsnQEydiPxfV6XVyZ/zjFdopYtPtKNMjh7L7ecmW">
-                        <div class="dragArea row">
-                           <div class="col-lg-12 col-md-12 col-sm-12">
-                              <h1 class="mbr-section-title mbr-fonts-style mb-4 display-1">
-                                 <strong>Dream big, achieve bigger</strong>
-                              </h1>
-                           </div>
-                           <div class="col-lg-12 col-md-12 col-sm-12">
-                           </div>
-                           <div data-for="email" class="col-lg-6 col-md-6 col-sm-12">
-                              <input type="email" name="email" placeholder="test@email.com" data-form-field="email" class="form-control display-7" value="" id="email-header08-10">
-                           </div>
-                           <div class="col-auto mbr-section-btn"><button type="submit" class="w-100 btn btn-success display-7">Submit</button></div>
-                           <div class="row">
-                              <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks  we will get back to you</div>
-                              <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
-                                 Oops...! some problem!
-                              </div>
-                           </div>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Academy | Verse Concepts</title>
+    <meta name="description" content="Verse Concepts Academy: Hands-on training in Digital Marketing, Web Dev, Design, and Virtual Assistance.">
+    
+    <link rel="shortcut icon" href="https://r.mobirisesite.com/1794503/assets/images/photo-1634561721901-5c4a52896-h_mf47rocn.jpg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* --- DESIGN SYSTEM --- */
+        :root {
+            --primary: #10b981;
+            --primary-hover: #059669;
+            --accent: #0ea5e9;
+            
+            /* Dark Mode */
+            --bg-body: #050505;
+            --bg-surface: #121212;
+            --bg-surface-2: #1e1e1e;
+            --text-main: #ffffff;
+            --text-muted: #e2e8f0;
+            --border-color: rgba(255, 255, 255, 0.15);
+            --shadow: 0 10px 40px rgba(0,0,0,0.5);
+            --nav-glass: rgba(5, 5, 5, 0.9);
+            --hero-overlay: linear-gradient(135deg, rgba(5, 5, 5, 0.95) 0%, rgba(5, 5, 5, 0.8) 100%);
+        }
+
+        [data-theme="light"] {
+            /* Light Mode */
+            --bg-body: #f8fafc;
+            --bg-surface: #ffffff;
+            --bg-surface-2: #f1f5f9;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: rgba(0, 0, 0, 0.08);
+            --shadow: 0 10px 40px rgba(0,0,0,0.05);
+            --nav-glass: rgba(255, 255, 255, 0.9);
+            --hero-overlay: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 100%);
+        }
+
+        /* --- GLOBAL --- */
+        body, .card, .btn, .form-control { transition: 0.4s ease; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg-body); color: var(--text-main); overflow-x: hidden; }
+        h1, h2, h3, h4, h5 { font-family: 'Syne', sans-serif; font-weight: 700; }
+        .text-primary-custom { color: var(--primary); }
+        
+        /* --- NAVBAR --- */
+        .navbar { background: var(--nav-glass); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-color); padding: 1rem 0; }
+        .nav-link { color: var(--text-main) !important; opacity: 0.8; margin: 0 10px; transition: 0.3s; }
+        .nav-link:hover { opacity: 1; color: var(--primary) !important; }
+
+        /* --- HERO --- */
+        .page-header {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            /* Education/Academy themed background */
+            background: var(--hero-overlay), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            padding-top: 80px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        /* --- CARDS --- */
+        .glass-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: var(--shadow); }
+
+        /* --- COURSE CARDS --- */
+        .course-card {
+            background: var(--bg-surface-2);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            height: 100%;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .course-card:hover { border-color: var(--primary); background: var(--bg-surface); transform: translateX(5px); }
+        .course-icon {
+            width: 50px; height: 50px; border-radius: 12px;
+            background: rgba(16, 185, 129, 0.1); color: var(--primary);
+            display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+        }
+
+        /* --- SOCIAL GRID --- */
+        .social-card {
+            background: var(--bg-surface-2);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            transition: 0.3s;
+            border: 1px solid var(--border-color);
+        }
+        .social-card:hover { transform: translateY(-5px); border-color: var(--primary); background: var(--bg-surface); }
+        .social-icon { font-size: 2.5rem; margin-bottom: 1rem; display: inline-block; }
+
+        /* --- FORM --- */
+        .form-control {
+            background: var(--bg-surface-2);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .form-control:focus { background: var(--bg-surface); border-color: var(--primary); color: var(--text-main); box-shadow: none; }
+        .form-control::placeholder { color: var(--text-muted); opacity: 0.7; }
+
+        /* --- THEME SWITCH --- */
+        .theme-switch {
+            width: 50px; height: 26px; background: var(--bg-surface-2); border: 1px solid var(--border-color);
+            border-radius: 50px; position: relative; cursor: pointer; display: flex; align-items: center; padding: 2px;
+        }
+        .theme-switch .ball {
+            position: absolute; width: 20px; height: 20px; background: var(--text-main); border-radius: 50%; left: 3px; transition: 0.3s;
+        }
+        [data-theme="light"] .theme-switch .ball { transform: translateX(24px); }
+
+        /* --- BUTTON --- */
+        .btn-custom {
+            background: var(--primary); color: #fff; padding: 12px 30px; border-radius: 50px; border: none; font-weight: 600; transition: 0.3s;
+        }
+        .btn-custom:hover { background: var(--primary-hover); transform: translateY(-2px); color: white; }
+
+        /* --- FOOTER --- */
+        footer { background: #020202; color: #fff; padding: 4rem 0 2rem; border-top: 1px solid rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="https://r.mobirisesite.com/1794503/assets/images/photo-1634561721901-5c4a52896-h_mf47rocn.jpg" alt="" style="height: 40px; border-radius: 50%; margin-right: 10px;">
+                <span style="font-weight: 800; color: var(--text-main);">VERSE CONCEPTS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="fa-solid fa-bars" style="color: var(--text-main);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Academy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <div class="theme-switch" onclick="toggleTheme()">
+                            <div class="ball"></div>
                         </div>
-                     </form>
-                  </div>
-               </div>
-               <div class="col-lg-5 col-12">
-                  <div class="image-wrapper">
-                     <img class="w-100" src="https://r.mobirisesite.com/1794503/assets/images/gbd5d5e5b8708261a3cd18393a58a-h_mfcugiuu.jpg" alt="">
-                  </div>
-               </div>
+                    </li>
+                </ul>
             </div>
-         </div>
-      </section>
-      <section data-bs-version="5.1" class="social02 cid-uWjMVqwagw" id="social02-12">
-         <div class="container">
-            <div class="row justify-content-center">
-               <div class="col-12 content-head">
-                  <div class="mb-5">
-                     <h5 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                        <strong>Follow us</strong>
-                     </h5>
-                  </div>
-               </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <span class="badge bg-primary bg-opacity-25 text-primary border border-primary m-3 px-3 py-2 rounded-pill">SKILLS DEVELOPMENT</span>
+                    <h1 class="display-3 mb-4">Verse <span class="text-primary-custom">Academy</span></h1>
+                    <p class="lead  mb-4" style="max-width: 600px;">
+                        The training arm of Verse Concepts. We empower individuals with the knowledge and hands-on tools needed to thrive in the digital world.
+                    </p>
+                    <a href="#courses" class="btn btn-custom m-3">Explore Courses</a>
+                </div>
             </div>
-            <div class="row">
-               <div class="item features-without-image col-12 col-md-6 col-lg-4">
-                  <div class="item-wrapper">
-                     <a href="https://www.instagram.com/verse_concepts_kenya?igsh=cDAxYWl2dGJtc3Bp"><span class="mbr-iconfont m-auto socicon-instagram socicon"></span></a>
-                     <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style mb-1 display-7">
-                           <strong>Instagram</strong>
-                        </h4>
-                        <h5 class="card-text mbr-fonts-style display-7">
-                           Lorem ipsum dolor sit amet.
-                        </h5>
-                     </div>
-                  </div>
-               </div>
-               <div class="item features-without-image col-12 col-md-6 col-lg-4">
-                  <div class="item-wrapper">
-                     <span class="mbr-iconfont m-auto socicon-twitch socicon"></span>
-                     <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style mb-1 display-7">
-                           <strong>Twitch</strong>
-                        </h4>
-                        <h5 class="card-text mbr-fonts-style display-7">
-                           Lorem ipsum dolor sit amet.
-                        </h5>
-                     </div>
-                  </div>
-               </div>
-               <div class="item features-without-image col-12 col-md-6 col-lg-4">
-                  <div class="item-wrapper">
-                     <span class="mbr-iconfont m-auto socicon-twitter socicon"></span>
-                     <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style mb-1 display-7">
-                           <strong>Twitter</strong>
-                        </h4>
-                        <h5 class="card-text mbr-fonts-style display-7">
-                           Lorem ipsum dolor sit amet.
-                        </h5>
-                     </div>
-                  </div>
-               </div>
-               <div class="item features-without-image col-12 col-md-6 col-lg-4">
-                  <div class="item-wrapper">
-                     <span class="mbr-iconfont m-auto socicon-youtube socicon"></span>
-                     <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style mb-1 display-7">
-                           <strong>YouTube</strong>
-                        </h4>
-                        <h5 class="card-text mbr-fonts-style display-7">
-                           Lorem ipsum dolor sit amet.
-                        </h5>
-                     </div>
-                  </div>
-               </div>
-               <div class="item features-without-image col-12 col-md-6 col-lg-4">
-                  <div class="item-wrapper">
-                     <span class="mbr-iconfont m-auto socicon-tiktok socicon"></span>
-                     <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style mb-1 display-7">
-                           <strong>TikTol</strong>
-                        </h4>
-                        <h5 class="card-text mbr-fonts-style display-7">
-                           Lorem ipsum dolor sit amet.
-                        </h5>
-                     </div>
-                  </div>
-               </div>
-               <div class="item features-without-image col-12 col-md-6 col-lg-4">
-                  <div class="item-wrapper">
-                     <span class="mbr-iconfont m-auto socicon-facebook socicon"></span>
-                     <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style mb-1 display-7">
-                           <strong>Facebook</strong>
-                        </h4>
-                        <h5 class="card-text mbr-fonts-style display-7">
-                           Lorem ipsum dolor sit amet.
-                        </h5>
-                     </div>
-                  </div>
-               </div>
+        </div>
+    </section>
+
+    <section id="courses" class="py-5 bg-surface">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <h2 class="mb-4">Bridging Talent & <br><span class="text-primary-custom">Opportunity</span></h2>
+                    <p class=" mb-4">
+                        We focus on practical, hands-on training equipping learners with in-demand skills that open doors to both local and global opportunities.
+                    </p>
+                    <p class=" mb-4">
+                        At My Academy, we believe in <strong>learning by doing</strong>. That’s why our programs combine expert-led lessons with real projects, mentorship, and guaranteed internship opportunities.
+                    </p>
+                    
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                <div>
+                                    <h6 class="mb-0">Web & App Dev</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                                <div>
+                                    <h6 class="mb-0">Graphic Design</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                <div>
+                                    <h6 class="mb-0">SEO & Marketing</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fa-solid fa-headset"></i></div>
+                                <div>
+                                    <h6 class="mb-0">Virtual Assistance</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop" class="img-fluid rounded-4 shadow border border-secondary border-opacity-25" alt="Students Learning">
+                </div>
             </div>
-         </div>
-      </section>
-      <script src="https://r.mobirisesite.com/1794503/assets/web/assets/jquery/jquery.min.js?rnd=1758724057679"></script>
-      <script src="https://r.mobirisesite.com/1794503/assets/bootstrap/js/bootstrap.bundle.min.js?rnd=1758724057679"></script>
-      <script src="https://r.mobirisesite.com/1794503/assets/parallax/jarallax.js?rnd=1758724057679"></script>
-      <script src="https://r.mobirisesite.com/1794503/assets/smoothscroll/smooth-scroll.js?rnd=1758724057679"></script>
-      <script src="https://r.mobirisesite.com/1794503/assets/ytplayer/index.js?rnd=1758724057679"></script>
-      <script src="https://r.mobirisesite.com/1794503/assets/theme/js/script.js?rnd=1758724057679"></script>
-      <script src="https://r.mobirisesite.com/1794503/assets/formoid.min.js?rnd=1758724057679"></script>
-   </body>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 my-5">
+        <div class="container">
+            <div class="glass-card p-0 overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-lg-5 position-relative d-none d-lg-block">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop" class="w-100 h-100 object-fit-cover" alt="Dream Big">
+                        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 185, 129, 0.2);"></div>
+                    </div>
+                    <div class="col-lg-7 p-5">
+                        <h2 class="display-5 mb-3">Dream Big, <br>Achieve <span class="text-primary-custom">Bigger</span></h2>
+                        <p class=" mb-4">Join our community. Your journey doesn’t end at learning — it continues with career support and networking.</p>
+                        
+                        <form action="https://formspree.io/f/your-form-id" method="POST">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <input type="email" name="email" class="form-control form-control-lg" placeholder="Enter your email address..." required>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-custom w-100 py-3">Start Your Journey</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: var(--bg-surface-2);">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h5>COMMUNITY</h5>
+                <h2>Follow Our Journey</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+                    <a href="https://www.instagram.com/verse_concepts_kenya" class="text-decoration-none">
+                        <div class="social-card">
+                            <span class="social-icon text-primary-custom"><i class="fa-brands fa-instagram"></i></span>
+                            <h6 class="mb-0 text-main">Instagram</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="#" class="text-decoration-none">
+                        <div class="social-card">
+                            <span class="social-icon text-primary-custom"><i class="fa-brands fa-twitch"></i></span>
+                            <h6 class="mb-0 text-main">Twitch</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+                    <a href="#" class="text-decoration-none">
+                        <div class="social-card">
+                            <span class="social-icon text-primary-custom"><i class="fa-brands fa-twitter"></i></span>
+                            <h6 class="mb-0 text-main">Twitter</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="400">
+                    <a href="#" class="text-decoration-none">
+                        <div class="social-card">
+                            <span class="social-icon text-primary-custom"><i class="fa-brands fa-youtube"></i></span>
+                            <h6 class="mb-0 text-main">YouTube</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="500">
+                    <a href="#" class="text-decoration-none">
+                        <div class="social-card">
+                            <span class="social-icon text-primary-custom"><i class="fa-brands fa-tiktok"></i></span>
+                            <h6 class="mb-0 text-main">TikTok</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="600">
+                    <a href="#" class="text-decoration-none">
+                        <div class="social-card">
+                            <span class="social-icon text-primary-custom"><i class="fa-brands fa-facebook-f"></i></span>
+                            <h6 class="mb-0 text-main">Facebook</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h4 class="mb-1">VERSE CONCEPTS</h4>
+                    <p class="small ">© 2025 Verse Concepts Kenya. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="https://www.instagram.com/verse_concepts_kenya" class="text-white me-3 fs-5"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3 fs-5"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50 });
+
+        // Theme Toggle Logic
+        function toggleTheme() {
+            const html = document.documentElement;
+            const current = html.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        }
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
 </html>
